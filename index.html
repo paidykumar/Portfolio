@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paidy Kumar Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <!-- Navbar -->
+  <nav>
+    <h1>Paidy Kumar</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="paidykumar_resume_mswipe.docx" download="Paidy_kumar_Resume.docx">Download Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h2>Welcome to My Portfolio</h2>
+    <p>Bachelor of Technology(IIIT) | Full Stack Developer | WEB Developer </p>
+    <button onclick="scrollToSection('contact')">Contact Me</button>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Paidy kumar,  
+      mpaidykumar@gmail.com love to collaborate!</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">Python</div>
+	 <div class="skill-item">Odoo ERP</div>
+ <div class="skill-item">Django</div>
+      <div class="skill-item">PostgreSQL</div>
+      <div class="skill-item">HTML</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">Xml</div>
+ <div class="skill-item">Linux</div>
+ <div class="skill-item">Github</div>
+ <div class="skill-item">bootstrap</div>
+ <div class="skill-item">Docker</div>
+ <div class="skill-item">Azure VM</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-item">
+        <h3><a href="#" target="_blank">Loan Application Management System (Odoo ERP v15)</a></h3>
+        <p>Developed a comprehensive web application for managing different types of loans.</p>
+      </div>
+      
+      <div class="project-item">
+        <h3><a href="#" target="_blank">Learning Management System (Django)</a></h3>
+        <p>Developed a comprehensive learning management. It is a modular and flexible system, and the various modules are seamlessly integrated with each other. Application provides immediate access to Educational, administrative, and billing data required by the various entities for the efficient functioning of the LMS. 
+Online courses , content management , online payments with razor pay payment gateway etc features includ-ed in this application.</p>
+      </div>
+      <div class="project-item">
+        <h3><a href="#" target="_blank">Sales Management (Odoo ERP v13)</a></h3>
+        <p>Developed and customized a comprehensive Sales Management application integrating Sales, Accounting, CRM, Payroll, and all Human Resources-related modules.</p>
+      </div>
+	<div class="project-item">
+        <h3><a href="#" target="_blank">School Management Application (Odoo ERP)</a></h3>
+        <p>Developed a school management application on Odoo v12 that includ-ed functionalities like student admissions, online assignments, exami-nations, and employee management.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+ <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for any collaboration or opportunities.</p>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+</section>
+
+  <script src="./script.js">  </script>
+</body>
+
+</html>
