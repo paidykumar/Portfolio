@@ -272,25 +272,20 @@ form button:hover {
 }
 /* Theme Toggle Button */
 .theme-toggle {
-position: fixed;
-right: 0;
-bottom: 20px; /* Adjust this value to fine-tune the position */
-width: 50px; /* Width of the toggle button */
-height: 150px; /* Height of the button (vertical bar) */
-background-color: #333;
-color: #fff;
-font-size: 2em;
-display: flex;
-justify-content: center;
-align-items: center;
-border: none;
-border-radius: 10px;
-cursor: pointer;
-transition: background 0.3s;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  border-radius: 50%; /* Make it circular for a modern look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for better visibility */
+  width: 50px; /* Adjust the size */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .theme-toggle:hover {
-background-color: #ff7e5f;
+  background-color: #555; /* Change background color on hover */
+  color: #fff; /* Adjust text color on hover */
 }
 
 /* Light Theme (default) */
